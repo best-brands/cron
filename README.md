@@ -9,16 +9,16 @@ will have to look something like this:
 
 ```php
 function fn_[my_addon]_cron_run(int $time) {
-	// Using closures
-	Tygh::$app['cron']->add("* * * * *", function () {
-		...
-	});
+    // Using closures
+    Tygh::$app['cron']->add("* * * * *", function () {
+        ...
+    });
 	
-	// Using existing classes registered in the DI
-	Tygh::$app['cron']->add("* * * * *", [Tygh::$app['addons.[my_addon].service'], 'method']);
+    // Using existing classes registered in the DI
+    Tygh::$app['cron']->add("* * * * *", [Tygh::$app['addons.[my_addon].service'], 'method']);
 	
-	// Or just using an already existing function
-	Tygh::$app['cron']->add("* * * * *", 'fn_[my_addon]_cron_handler');
+    // Or just using an already existing function
+    Tygh::$app['cron']->add("* * * * *", 'fn_[my_addon]_cron_handler');
 }
 ```
 
