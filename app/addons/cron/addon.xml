@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<addon scheme="4.0">
+    <id>cron</id>
+    <name>Cron management</name>
+    <description>Allows you to manage and schedule your own cron jobs easily</description>
+    <version>1.0</version>
+    <priority>1</priority>
+    <position>0</position>
+    <status>active</status>
+    <supplier>HarmSmits</supplier>
+    <supplier_link>https://github.com/harm-smits</supplier_link>
+    <default_language>en</default_language>
+
+    <authors>
+        <author>
+            <name>Harm Smits</name>
+            <email>harmsmitsdev@gmail.com</email>
+            <phone>+31625500655</phone>
+        </author>
+    </authors>
+
+    <autoload>
+        <psr4 prefix="Tygh\Addons\Cron\">src</psr4>
+    </autoload>
+
+    <bootstrap>\Tygh\Addons\Cron\Bootstrap</bootstrap>
+</addon>
