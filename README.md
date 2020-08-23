@@ -28,7 +28,7 @@ using janky if-else trees, just register as follows:
 
 ```php
 fn_register_hooks([
-	['my_own_hook', '', 'cron']
+    ['my_own_hook', '', 'cron']
 ]);
 ```
 
@@ -38,7 +38,7 @@ Your handler would look as follows:
 fn_cron_[my_own_hook](int $time) {
     ...
 }
-```php
+```
 
 You can also use the new hook handler maps.
 
