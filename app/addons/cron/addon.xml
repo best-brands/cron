@@ -7,14 +7,14 @@
     <priority>1</priority>
     <position>0</position>
     <status>active</status>
-    <supplier>HarmSmits</supplier>
-    <supplier_link>https://github.com/harm-smits</supplier_link>
+    <supplier>Best Brands</supplier>
+    <supplier_link>https://github.com/best-brands</supplier_link>
     <default_language>en</default_language>
 
     <authors>
         <author>
             <name>Harm Smits</name>
-            <email>harmsmitsdev@gmail.com</email>
+            <email>harm@bestbrands.eu</email>
             <phone>+31625500655</phone>
         </author>
     </authors>
